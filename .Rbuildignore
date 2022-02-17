@@ -1,0 +1,17 @@
+^Meta$
+^doc$
+^.*\.Rproj$
+^\.Rproj\.user$
+
+^README\.Rmd$
+^README_files$
+^cran-comments\.md$
+^\.travis\.yml
+^.github$
+^example$
+^_config.yml$
+^inst/papaja_manuscripts.bib
+^inst/apa_source_files.csl
+^CODE_OF_CONDUCT\.md$
+^\.github$
+^\.vscode$

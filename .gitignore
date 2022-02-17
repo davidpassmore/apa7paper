@@ -1,0 +1,20 @@
+Meta
+doc
+# History files
+.Rhistory
+
+# Example code in package build process
+*-Ex.R
+# R data files from past sessions
+.Rdata
+.Rproj.user
+# System files
+*~
+.DS_Store
+Thumbs.db
+.RData
+example/example_files
+example/example.tex
+inst/doc
+
+.vscode/tasks.json

@@ -1,0 +1,40 @@
+language: R
+r:
+  - oldrel
+  - release
+  - devel
+
+pandoc_version: 2.3.1
+
+cache: packages
+
+# Be strict when checking our package
+warnings_are_errors: true
+
+# Suggested packages needed to run tests
+
+r_packages:
+  - car
+  - afex
+  - lsmeans
+  - multcomp
+  - MBESS
+  - ggplot2
+  - dplyr
+  - downloader
+  - testthat
+  - BayesFactor
+  - latex2exp
+
+# Install other dependencies # longtable lscape tabularx
+before_install:
+  - tlmgr install apa6 booktabs caption csquotes endfloat environ etoolbox fancyhdr fancyvrb framed lineno microtype mptopdf ms parskip pgf sttools threeparttable threeparttablex trimspaces txfonts upquote url was xcolor
+
+addons:
+  apt:
+    packages:
+    - lmodern
+    # - libgsl0ldbl # GNU scientific library for MBESS
+    - libgsl-dev # GNU scientific library for MBESS
+    - libnlopt-dev # nloptr
+
